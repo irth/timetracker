@@ -1,0 +1,24 @@
+.timer {
+    font-size: 400%;
+}
+
+.time .number {
+    display: inline-block;
+    width: 1.5em;
+}
+
+.time .duration {
+    font-weight: bold;
+}
+
+.time .timestamps {
+    margin-left: 1.5em;
+    display: block;
+    font-style: italic;
+}
+
+.time .in-progress {
+    font-weight: normal;
+    color: #999;
+    font-style: italic;
+}

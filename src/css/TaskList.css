@@ -1,0 +1,7 @@
+.container {
+    margin-top: 1.5em;
+}
+
+.task-list :global(.card.waves-effect) {
+    width: 100%;
+}
