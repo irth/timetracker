@@ -34,6 +34,11 @@ function formatDuration(t) {
     return str
 }
 
+function formatDay(t) {
+    let d = new Date(t);
+    return d.toLocaleDateString()
+}
+
 function getTime(s) {
     let d = new Date(s);
     return ("0" + d.getHours()).substr(-2) + ":" + ("0" + d.getMinutes()).substr(-2)
@@ -103,7 +108,7 @@ class TaskDetail extends Component {
                     <li key={x[0]} className={`${styles.time} collection-item`}>
                         <span className={styles.number}>{number}.</span>
                         <span className={styles.duration}>{formatDuration([0, duration])}</span>
-                        <span className={styles.timestamps}>starting day</span>
+                        <span className={styles.timestamps}>{formatDay(x[0][0])}</span>
                     </li>
                 )
             });
