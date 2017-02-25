@@ -2,11 +2,11 @@ import { ADD_TASK, REMOVE_TASK, UPDATE_TASK, START_TIMER, STOP_TIMER, PAUSE_TIME
 
 
 // Tasks
-export function addTask(name, id) {
+export function addTask(id, name) {
     return {
         type: ADD_TASK,
-        name,
-        id
+        id: parseInt(id),
+        name
     }
 }
 
