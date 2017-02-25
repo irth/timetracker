@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { browserHistory } from 'react-router'
+import { Link, browserHistory } from 'react-router'
 
 import { connect } from 'react-redux'
 
@@ -17,7 +17,7 @@ class TaskList extends Component {
                     </div>
                 ))}
                 <div className="fixed-action-btn">
-                    <a className="btn-floating btn-large waves-effect waves-light red"><i className="material-icons">add</i></a>
+                    <Link className="btn-floating btn-large waves-effect waves-light red" to="/tasks/add"><i className="material-icons">add</i></Link>
                 </div>
             </div>
         )
